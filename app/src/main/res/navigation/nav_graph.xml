@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.redx.idmaker.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_home_to_country"
+            app:destination="@id/countryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.redx.idmaker.ui.country.CountryFragment"
+        android:label="Select Country"
+        tools:layout="@layout/fragment_country"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_country_to_idtype"
+            app:destination="@id/idTypeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idTypeFragment"
+        android:name="com.redx.idmaker.ui.idtype.IdTypeFragment"
+        android:label="Select ID Type"
+        tools:layout="@layout/fragment_id_type"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_idtype_to_form"
+            app:destination="@id/formFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.redx.idmaker.ui.form.FormFragment"
+        android:label="Fill Details"
+        tools:layout="@layout/fragment_form"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_form_to_preview"
+            app:destination="@id/previewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.redx.idmaker.ui.preview.PreviewFragment"
+        android:label="Preview"
+        tools:layout="@layout/fragment_preview"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_preview_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

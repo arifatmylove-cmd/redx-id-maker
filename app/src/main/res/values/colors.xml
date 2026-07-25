@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#121828</color>
+    <color name="surface">#1E2A40</color>
+    <color name="surface_variant">#263350</color>
+    <color name="gold">#D4AF37</color>
+    <color name="gold_dark">#8B6914</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8899BB</color>
+    <color name="accent_green">#006600</color>
+    <color name="accent_red">#CC0000</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
